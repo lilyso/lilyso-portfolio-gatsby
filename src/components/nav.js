@@ -48,24 +48,24 @@ const Nav = ({ menulinks }) => {
       </div>
       {(toggleMenu || screenWidth > 1025) && (
         <>
-          <div className="z-40 md:mb-0 lg-mb-0 w-full p-4 block lg:flex lg:w-auto">
-            {menulinks &&
-              menulinks.map(menulink => (
-                <SlideDown>
+          <SlideDown>
+            <div className="z-40 md:mb-0 lg-mb-0 w-full p-4 block lg:flex lg:w-auto">
+              {menulinks &&
+                menulinks.map(menulink => (
                   <div
                     key={menulink.name}
                     className="justify-end flex text-base"
                   >
                     <Link
                       to={menulink.link}
-                      className="text-xl block lg:inline-block lg:mt-0 text-white p-4 hover:bg-white hover:text-black"
+                      className="mx-4 py-2 text-lg block lg:inline-block lg:mt-0 text-white border-solid border-black border-b-2 hover:border-yellow-300"
                     >
                       {menulink.name}
                     </Link>
                   </div>
-                </SlideDown>
-              ))}
-          </div>
+                ))}
+            </div>
+          </SlideDown>
         </>
       )}
     </nav>
