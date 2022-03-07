@@ -8,8 +8,8 @@ const AboutMe = () => {
         <div className="px-4 border-l-2 border-solid border-white w-full lg:w-1/2">
           <p>Hi,</p>
           <p>
-            I am a web developer based in Sydney. I'm currently open to
-            freelance and full-time opportunites.
+            I'm a Sydney-based web developer and I'm currently open to freelance
+            and full-time opportunites.
           </p>
           <p>
             I have over 8 years of experience in Digital Marketing, specialising

@@ -21,13 +21,13 @@ const Layout = ({ children }) => {
   `)
   console.log(data)
   return (
-    <>
+    <div style={{ margin: "auto", maxWidth: "1600px" }}>
       <Header menulinks={data.site.siteMetadata?.menuLinks} />
       <div>
         <main className="bg-black">{children}</main>
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
 
