@@ -15,7 +15,7 @@ const TechnicalSkills = () => {
   ]
   return (
     <LazyShow>
-      <div className="flex-wrap flex p-4 text-white justify-evenly">
+      <div className="py-8 flex-wrap flex text-white justify-evenly">
         {skills &&
           skills.map(skill => (
             <p className="px-2 hover:text-yellow-300 hover:scale-150 hover:transition hover:duration-500 hover:ease-in-out">

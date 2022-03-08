@@ -9,12 +9,12 @@ const Hero = () => {
     <div className="p-4 mx-auto flex flex-wrap md:flex-no-wrap lg:flex-no-wrap items-center">
       <div className="w-full lg:w-1/2 p-8">
         <Slide>
-          <h1 className="text-center md:text-left lg:text-left bg-black text-white text-6xl">
+          <h1 className="text-center md:text-left lg:text-left bg-black text-white text-8xl">
             LILY SO
           </h1>
         </Slide>
         <SlideSlow>
-          <p className="text-white text-4xl text-center md:text-left lg:text-left">
+          <p className="text-yellow-300 text-6xl text-center md:text-left lg:text-left">
             Full Stack Developer <br /> &amp; Digital Marketing Specialist
           </p>
         </SlideSlow>

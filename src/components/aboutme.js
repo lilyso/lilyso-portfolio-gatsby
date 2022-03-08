@@ -1,12 +1,18 @@
 import React from "react"
 import LazyShow from "./lazyshow"
+import { StaticImage } from "gatsby-plugin-image"
 
 const AboutMe = () => {
   return (
     <LazyShow>
-      <div className="text-white p-8 mx-12">
-        <div className="px-4 border-l-2 border-solid border-white w-full lg:w-1/2">
-          <p>Hi,</p>
+      <div className="mx-auto justify-center my-4 flex text-white p-8">
+        <StaticImage
+          src="../images/sydney.png"
+          alt="sydney harbour bridge from observatory hill"
+          className="rounded-lg w-full md:w-1/3 lg:w-1/3"
+        />
+
+        <div className="mx-4 p-4 w-full md:w-1/3 lg:w-1/3">
           <p>
             I'm a Sydney-based web developer and I'm currently open to freelance
             and full-time opportunites.
