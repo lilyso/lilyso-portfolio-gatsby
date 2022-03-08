@@ -12,7 +12,10 @@ const Footer = () => {
           <div className="p-4">
             {footerLinks &&
               footerLinks.map(link => (
-                <Link to="/" className="hover:text-yellow-300 text-white p-4">
+                <Link
+                  to="/"
+                  className="whitespace-nowrap hover:text-yellow-300 text-white p-2"
+                >
                   {link}
                 </Link>
               ))}
