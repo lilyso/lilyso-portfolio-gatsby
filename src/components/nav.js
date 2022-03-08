@@ -47,8 +47,8 @@ const Nav = ({ menulinks }) => {
         </button>
       </div>
       {(toggleMenu || screenWidth > 1025) && (
-        <div className="w-full">
-          <SlideDown style={{ width: "100%" }}>
+        <div className="flex justify-end w-full md:w-1/2 lg:w-1/2">
+          <SlideDown>
             <div className="z-40 p-4 block lg:flex">
               {menulinks &&
                 menulinks.map(menulink => (
