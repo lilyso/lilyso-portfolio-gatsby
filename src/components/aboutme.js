@@ -5,15 +5,15 @@ import { StaticImage } from "gatsby-plugin-image"
 const AboutMe = () => {
   return (
     <LazyShow>
-      <div className="p-4 w-1/5 mx-auto border-b border-solid border-white mb-12"></div>
-      <div className="mx-auto justify-center flex flex-wrap text-white">
-        <StaticImage
+      <div className="md:m-8 lg:m-12  border-solid border-white border-l text-left flex flex-wrap text-white">
+        {/* <StaticImage
           src="../images/sydney.png"
           alt="sydney harbour bridge from observatory hill"
-          className="mb-8 w-full md:w-1/2 lg:w-1/3"
-        />
+          className="opacity-50 mb-8 w-full md:w-1/2 lg:w-1/3"
+        /> */}
 
-        <div className="m-4 px-4 w-full md:w-1/2 lg:w-1/3">
+        <div className="text-lg m-4 px-4 w-full lg:w-1/2">
+          <h2 className="text-6xl">About</h2>
           <p>
             I'm a Sydney-based web developer and I'm currently open to freelance
             and full-time opportunites.
@@ -28,7 +28,6 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-      <div className="py-2 px-4 w-1/5 mx-auto border-b border-solid border-white"></div>
     </LazyShow>
   )
 }

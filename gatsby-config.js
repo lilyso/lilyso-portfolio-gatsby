@@ -10,16 +10,16 @@ module.exports = {
         link: "/about",
       },
       {
-        name: "EXPERIENCE",
-        link: "/experience",
-      },
-      {
-        name: "WORK",
-        link: "/work",
+        name: "PROJECTS",
+        link: "/projects",
       },
       {
         name: "CONTACT",
         link: "/contact",
+      },
+      {
+        name: "RESUME",
+        link: "/resume",
       },
     ],
   },

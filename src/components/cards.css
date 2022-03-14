@@ -1,0 +1,7 @@
+.boxshadow {
+  box-shadow: 1px 1px 12px rgb(252, 242, 171);
+}
+
+.textshadow {
+  text-shadow: 0 0 4px rgb(252, 242, 171);
+}

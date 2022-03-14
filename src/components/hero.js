@@ -14,7 +14,7 @@ const Hero = () => {
           </h1>
         </Slide>
         <SlideSlow>
-          <p className="text-yellow-300 text-6xl text-center md:text-left lg:text-left">
+          <p className="textshadow text-yellow-300 text-6xl text-center md:text-left lg:text-left">
             Full Stack Developer <br /> &amp; Digital Marketing Specialist
           </p>
         </SlideSlow>

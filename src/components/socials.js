@@ -16,7 +16,7 @@ const Socials = () => {
         socialIcons.map(socialIcon => (
           <FontAwesomeIcon
             icon={socialIcon}
-            size="lg"
+            size="2x"
             style={{ color: "white" }}
             className="hover:scale-150 hover:transition hover:duration-500 hover:ease-in-out p-4"
           />
