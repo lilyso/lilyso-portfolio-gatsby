@@ -1,18 +1,29 @@
 import React, { useState } from "react"
 import LazyShow from "./lazyshow"
-// import validator from "validator"
+import validator from "validator"
 
-export default function Contact() {
-  // const [emailError, setEmailError] = useState("")
-  // const validateEmail = e => {
-  //   let email = e.target.value
+const Contact = () => {
+  const [emailError, setEmailError] = useState("")
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  })
+  const validateEmail = e => {
+    let email = e.target.value
 
-  //   if (validator.isEmail(email)) {
-  //     setEmailError("Perfecto")
-  //   } else {
-  //     setEmailError("Please enter a valid email")
-  //   }
-  // }
+    if (validator.isEmail(email)) {
+      setEmailError("Perfecto")
+    } else {
+      setEmailError("Please enter a valid email")
+    }
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault()
+    // setFormState()
+  }
+
   return (
     <LazyShow>
       <div className="lg:m-12 px-4 py-12 m-8 text-white">
@@ -23,15 +34,21 @@ export default function Contact() {
           message below.
         </p>
         <div>
-          <form className="w-full lg:w-1/2">
+          <form
+            action="https://getform.io/f/e4d796b1-c845-40f2-b458-e9bddd504f87"
+            method="POST"
+            className="w-full lg:w-1/2"
+          >
             <div className="py-4 text-white">
               <label className="hidden" htmlFor="first-name">
                 First name
               </label>
               <input
+                type="text"
                 placeholder="Name"
                 className="w-full border-solid border-b border-yellow-300 bg-transparent"
                 id="first-name"
+                name="name"
               />
             </div>
             <div className="py-4 text-white">
@@ -42,16 +59,18 @@ export default function Contact() {
                 placeholder="Email"
                 className="w-full border-solid border-b border-yellow-300 bg-transparent"
                 id="email"
-                // onChange={e => validateEmail(e)}
+                type="email"
+                onChange={e => validateEmail(e)}
+                name="email"
               />
-              {/* <span
+              <span
                 style={{
                   fontWeight: "bold",
                   color: "red",
                 }}
               >
                 {emailError}
-              </span> */}
+              </span>
             </div>
             <div className="py-4 text-white">
               <label className="hidden" htmlFor="message">
@@ -61,12 +80,15 @@ export default function Contact() {
                 id="message"
                 className="w-full border-solid border-b border-yellow-300 bg-transparent"
                 placeholder="Write your message here"
+                type="text"
+                name="message"
               />
             </div>
             <button
               className="mx-2 my-4 p-2 text-white bg-yellow-300 text-black rounded-lg"
               id="submitButton"
               type="submit"
+              onSubmit={handleSubmit}
             >
               Submit
             </button>
@@ -76,3 +98,5 @@ export default function Contact() {
     </LazyShow>
   )
 }
+
+export default Contact
