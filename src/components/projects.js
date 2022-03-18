@@ -64,15 +64,15 @@ const Projects = () => {
     <div className="pt-4">
       <div className="md:m-8 lg:m-12 border-solid border-l border-yellow-300">
         <LazyShow>
-          <div className="flex flex-wrap text-yellow-300">
-            <h2 className="p-4 mx-4 text-6xl textshadow">Projects</h2>
-          </div>
+          <h2 className="p-4 mx-4 text-6xl text-center lg:text-left md:text-left text-yellow-300">
+            Projects
+          </h2>
         </LazyShow>
         <LazyShow>
           <div className="m-4 flex flex-wrap gap-2">
             {projectCards &&
               projectCards.map(projectCard => (
-                <div className="boxshadow p-4 m-2 rounded-xl border-solid border border-yellow-300 text-white w-full md:w-1/3 lg:w-1/4">
+                <div className="flex-grow boxshadow p-4 m-2 rounded-xl border-solid border border-yellow-300 text-white w-full md:w-1/3 lg:w-1/4">
                   <img
                     src={projectCard.src}
                     alt={projectCard.alt}

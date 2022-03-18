@@ -5,6 +5,8 @@ import Footer from "./footer"
 import Header from "./header"
 import "./layout.css"
 import "./cards.css"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

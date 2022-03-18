@@ -1,11 +1,11 @@
 import React from "react"
 import LazyShow from "./lazyshow"
-import { StaticImage } from "gatsby-plugin-image"
+import Carousel from "./carousel"
 
 const AboutMe = () => {
   return (
     <LazyShow>
-      <div className="md:m-8 lg:m-12  border-solid border-white border-l text-left flex flex-wrap text-white">
+      <div className="md:m-8 lg:m-12 border-solid border-white border-l text-left items-center flex flex-wrap lg:flex-nowrap text-white">
         {/* <StaticImage
           src="../images/sydney.png"
           alt="sydney harbour bridge from observatory hill"
@@ -13,7 +13,9 @@ const AboutMe = () => {
         /> */}
 
         <div className="text-lg m-4 px-4 w-full lg:w-1/2">
-          <h2 className="text-6xl">About</h2>
+          <h2 className="text-6xl md:text-left lg:text-left text-center">
+            About
+          </h2>
           <p>
             I'm a Sydney-based web developer and I'm currently open to freelance
             and full-time opportunites.
@@ -27,6 +29,7 @@ const AboutMe = () => {
             along with a range of small businesses in hospitality and ecommerce.
           </p>
         </div>
+        <Carousel />
       </div>
     </LazyShow>
   )

@@ -26,8 +26,10 @@ const Contact = () => {
 
   return (
     <LazyShow>
-      <div className="lg:m-12 px-4 py-12 m-8 text-white">
-        <h2 className="text-6xl">Contact</h2>
+      <div className="lg:m-12 px-4 pt-8 m-8 text-white">
+        <h2 className="text-6xl text-center md:text-left lg:text-left py-4">
+          Contact
+        </h2>
         <p>
           Want to know more about my experience and projects? Get in touch today
           at <a href="mailto:lily@lilyso.net">lily@lilyso.net</a> or send me a
