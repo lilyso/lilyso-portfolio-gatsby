@@ -1,23 +1,22 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Socials from "./socials"
 
-const Footer = () => {
-  const footerLinks = ["Home", "Experience", "Work", "Contact"]
+const Footer = ({ menulinks }) => {
   return (
     <footer className="bg-black py-4">
       <div className="pt-8 max-w-4xl text-center m-auto">
         <div>
           <Socials />
           <div className="p-4">
-            {footerLinks &&
-              footerLinks.map(link => (
-                <Link
-                  to="/"
+            {menulinks &&
+              menulinks.map(menulink => (
+                <AnchorLink
+                  to={menulink.link}
                   className="whitespace-nowrap hover:text-yellow-300 text-white p-2"
                 >
-                  {link}
-                </Link>
+                  {menulink.name}
+                </AnchorLink>
               ))}
           </div>
         </div>

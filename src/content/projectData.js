@@ -23,7 +23,7 @@ const projectData = [
     link: "https://swapzie.herokuapp.com/",
     src: "swapzie_home_page.png",
     alt: "swapzie homepage",
-    desc: "A swapping platform for pre-loved toys where parents can find or donate free toys. Made with React.",
+    desc: "A swapping platform for pre-loved toys where parents can find or donate free toys. MongoDB, Express, React, Node, Apollo, JWT.",
     role: "Sole Author",
   },
   {
@@ -41,7 +41,7 @@ const projectData = [
     link: "https://ancient-headland-48213.herokuapp.com/",
     src: "TheTechyBlog.png",
     alt: "tech blog homepage",
-    desc: "A CMS-style blog site where developers can publish their blog posts. Javascript, Node, Express, MySQL, Sequelize",
+    desc: "A CMS-style blog site where developers can publish their blog posts. Javascript, Node, Express, MySQL, Sequelize.",
     role: "Sole Author",
   },
   {
@@ -59,7 +59,7 @@ const projectData = [
     link: "https://lilyso.github.io/fun-night-in/",
     src: "fun-night-in.png",
     alt: "fun night in homepage",
-    desc: "Random Movie and Meal Generator. Javascript, JQuery, MealDB API, MovieDB API",
+    desc: "Random Movie and Meal Generator. Javascript, JQuery, MealDB API, MovieDB API.",
     role: "Front-End: UX, UI",
   },
 ]

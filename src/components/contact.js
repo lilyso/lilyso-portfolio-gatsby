@@ -21,7 +21,11 @@ const Contact = () => {
 
   function handleSubmit(e) {
     e.preventDefault()
-    // setFormState()
+    setFormState({
+      name: "",
+      email: "",
+      message: "",
+    })
   }
 
   return (
@@ -32,8 +36,11 @@ const Contact = () => {
         </h2>
         <p>
           Want to know more about my experience and projects? Get in touch today
-          at <a href="mailto:lily@lilyso.net">lily@lilyso.net</a> or send me a
-          message below.
+          at{" "}
+          <a className="hover:underline" href="mailto:lily@lilyso.net">
+            lily@lilyso.net
+          </a>{" "}
+          or send me a message below.
         </p>
         <div>
           <form

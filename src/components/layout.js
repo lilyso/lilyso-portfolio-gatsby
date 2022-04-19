@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
       <Header menulinks={data.site.siteMetadata?.menuLinks} />
       <div>
         <main className="bg-black">{children}</main>
-        <Footer />
+        <Footer menulinks={data.site.siteMetadata?.menuLinks} />
       </div>
     </div>
   )
