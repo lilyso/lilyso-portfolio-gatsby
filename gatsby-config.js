@@ -17,10 +17,6 @@ module.exports = {
         name: "CONTACT",
         link: "#contact",
       },
-      {
-        name: "RESUME",
-        link: "#resume",
-      },
     ],
   },
   plugins: [

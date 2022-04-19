@@ -62,6 +62,17 @@ const Nav = ({ menulinks }) => {
                     </AnchorLink>
                   </div>
                 ))}
+              <div className="justify-end flex">
+                <a
+                  className="mx-4 py-2 text-lg block lg:inline-block lg:mt-0 text-white border-solid border-black border-b-2 hover:border-yellow-300"
+                  href="Lily-Souryaphanh-2022.pdf"
+                  download
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  RESUME
+                </a>
+              </div>
             </div>
           </SlideDown>
         </div>
