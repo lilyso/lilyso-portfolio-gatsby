@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { StaticImage } from "gatsby-plugin-image"
 import { SlideDown } from "./slide"
 
@@ -53,12 +53,13 @@ const Nav = ({ menulinks }) => {
               {menulinks &&
                 menulinks.map(menulink => (
                   <div key={menulink.name} className="justify-end flex">
-                    <Link
+                    <AnchorLink
                       to={menulink.link}
+                      title={menulink.name}
                       className="mx-4 py-2 text-lg block lg:inline-block lg:mt-0 text-white border-solid border-black border-b-2 hover:border-yellow-300"
                     >
                       {menulink.name}
-                    </Link>
+                    </AnchorLink>
                   </div>
                 ))}
             </div>

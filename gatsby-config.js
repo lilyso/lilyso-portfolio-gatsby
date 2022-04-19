@@ -7,19 +7,19 @@ module.exports = {
     menuLinks: [
       {
         name: "ABOUT",
-        link: "/about",
+        link: "#about",
       },
       {
         name: "PROJECTS",
-        link: "/projects",
+        link: "#projects",
       },
       {
         name: "CONTACT",
-        link: "/contact",
+        link: "#contact",
       },
       {
         name: "RESUME",
-        link: "/resume",
+        link: "#resume",
       },
     ],
   },
@@ -28,6 +28,13 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-fontawesome-css`,
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100,
+        duration: 1000,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

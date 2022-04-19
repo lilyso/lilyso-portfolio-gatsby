@@ -12,7 +12,7 @@ const AboutMe = () => {
           className="opacity-50 mb-8 w-full md:w-1/2 lg:w-1/3"
         /> */}
 
-        <div className="text-lg m-4 px-4 w-full lg:w-1/2">
+        <div id="about" className="text-lg m-4 px-4 w-full lg:w-1/2">
           <h2 className="text-6xl md:text-left lg:text-left text-center">
             About
           </h2>
