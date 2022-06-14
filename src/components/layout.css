@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.image-border {
-  border-radius: 100%;
-}
-
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

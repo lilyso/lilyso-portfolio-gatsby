@@ -20,14 +20,15 @@ const Hero = () => {
         </SlideSlow>
       </div>
 
-      <div className="w-full lg:w-1/2 p-4 text-center">
+      <div className="w-full lg:w-1/2 p-4 flex justify-center">
         <SlideLeft>
-          <StaticImage
-            src="../images/lily.jpg"
-            alt="lily so"
-            className="max-w-sm image-border"
-            style={{ borderRadius: "100%" }}
-          />
+          <div>
+            <img
+              src="lily.jpg"
+              alt="lily so"
+              className="w-full max-w-sm rounded-full"
+            />
+          </div>
         </SlideLeft>
       </div>
     </div>
