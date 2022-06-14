@@ -8,7 +8,7 @@ const Footer = ({ menulinks }) => {
       <div className="pt-8 max-w-4xl text-center m-auto">
         <div>
           <Socials />
-          <div className="p-4">
+          <div className="p-4 flex justify-center flex-wrap">
             {menulinks &&
               menulinks.map(menulink => (
                 <AnchorLink

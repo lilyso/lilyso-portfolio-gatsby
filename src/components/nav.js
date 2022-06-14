@@ -22,8 +22,8 @@ const Nav = ({ menulinks }) => {
   }, [])
 
   return (
-    <nav className="lg:p-0 md:p-0 p-8 flex items-center flex-wrap justify-between">
-      <div className="px-8">
+    <nav className="p-0  flex items-center flex-wrap justify-between">
+      <div className="px-4 lg:px-8">
         <StaticImage
           src="../images/LS-Logo-1000wh.png"
           alt="lily so logo"

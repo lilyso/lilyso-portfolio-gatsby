@@ -9,7 +9,7 @@ const Projects = () => {
     <div id="projects" className="pt-4">
       <div className="md:m-8 lg:m-12 border-solid border-l border-yellow-300">
         <LazyShow>
-          <h2 className="p-4 mx-4 text-6xl text-center lg:text-left md:text-left text-yellow-300">
+          <h2 className="p-4 mx-4 text-4xl md:text-6xl lg:text-6xl text-center lg:text-left md:text-left text-yellow-300">
             Projects
           </h2>
         </LazyShow>
