@@ -1,5 +1,14 @@
 const projectData = [
   {
+    name: "Homage To Hobart",
+    github: "",
+    link: "https://homagetohobart.com.au",
+    src: "homagetohobart.png",
+    alt: "Homage to Hobart homepage",
+    desc: "Business Website made with Gatsby & React",
+    role: "Sole Author",
+  },
+  {
     name: "MCP Band",
     github: "",
     link: "https://mcptheband.com",
