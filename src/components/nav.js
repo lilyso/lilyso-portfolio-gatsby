@@ -65,7 +65,7 @@ const Nav = ({ menulinks }) => {
               <div className="justify-end flex">
                 <a
                   className="mx-4 py-2 text-lg block lg:inline-block lg:mt-0 text-white border-solid border-black border-b-2 hover:border-yellow-300"
-                  href="Lily-Souryaphanh-2023.pdf"
+                  href="Lily-Souryaphanh-Dev-2023.pdf"
                   download
                   rel="noopener noreferrer"
                   target="_blank"
