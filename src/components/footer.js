@@ -20,7 +20,7 @@ const Footer = ({ menulinks }) => {
               ))}
             <a
               className="whitespace-nowrap hover:text-yellow-300 text-white p-2"
-              href="Lily-Souryaphanh-2022.pdf"
+              href="Lily-Souryaphanh-CV-2025.pdf"
               download
               rel="noopener noreferrer"
               target="_blank"

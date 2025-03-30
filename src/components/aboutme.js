@@ -22,10 +22,11 @@ const AboutMe = () => {
           </p>
           <p>
             I have over 8 years of experience in Digital Marketing, specialising
-            in Content Strategy, Social Media Marketing &amp; Email Marketing.
+            in Content Strategy, Social Media Marketing, Email Marketing and a 
+            Braze Certified Digital Strategist.
           </p>
           <p>
-            I have worked with brands such as Optus, Audio-Technica &amp; PetO,
+            I have worked with brands such as Optus, Audio-Technica and PetO,
             along with a range of small businesses in hospitality and ecommerce.
           </p>
         </div>
