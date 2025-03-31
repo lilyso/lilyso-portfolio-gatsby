@@ -14,6 +14,7 @@ const TechnicalSkills = () => {
     "JQuery",
     "MySQL",
     "GraphQL",
+    "PHP",
   ]
   return (
     <LazyShow>

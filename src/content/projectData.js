@@ -2,7 +2,7 @@ const projectData = [
   {
     name: "Kitty Flanagan",
     github: "",
-    link: "https://kittyflangan.com",
+    link: "https://kittyflanagan.com",
     src: "kitty-flanagan-website.png",
     alt: "Kitty Flanagan homepage",
     desc: "Bespoke wordpress website for comedian Kitty Flanagan",
@@ -38,7 +38,7 @@ const projectData = [
   {
     name: "Daniel Muggleton",
     github: "",
-    link: "https://danielmuggleton.com",
+    link: "https://danielmuggleton.com.au",
     src: "daniel-muggleton-website.png",
     alt: "Daniel Muggleton homepage",
     desc: "Bespoke wordpress website for comedian Daniel Muggleton",
