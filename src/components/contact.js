@@ -37,8 +37,8 @@ const Contact = () => {
         <p>
           Want to know more about my experience and projects? Get in touch today
           at{" "}
-          <a className="hover:underline" href="mailto:lily@lilyso.net">
-            lily@lilyso.net
+          <a className="hover:underline" href="mailto:lilysodev@gmail.com">
+            lilysodev@gmail.com
           </a>
         </p>
       </div>
