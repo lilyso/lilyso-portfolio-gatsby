@@ -17,17 +17,13 @@ const AboutMe = () => {
             About
           </h2>
           <p>
-            I'm a Sydney-based web developer and I'm currently open to freelance
-            and full-time opportunites.
+            I'm a Sydney-based web developer and Braze Certified Digital Strategist with over 8 years of experience in digital marketing. I specialise in email marketing, CRM, marketing automation, content strategy and social media marketing.
           </p>
           <p>
-            I have over 8 years of experience in Digital Marketing, specialising
-            in Content Strategy, Social Media Marketing, Email Marketing and a 
-            Braze Certified Digital Strategist.
+            I've worked with brands like Optus, Audio-Technica and PetO, as well as small businesses across hospitality and ecommerce.
           </p>
           <p>
-            I have worked with brands such as Optus, Audio-Technica and PetO,
-            along with a range of small businesses in hospitality and ecommerce.
+            I'm currently open to freelance and full-time opportunities.
           </p>
         </div>
         <Carousel />

@@ -1,10 +1,7 @@
 import * as React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faInstagram,
-  faFacebook,
   faLinkedin,
-  faTwitter,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons"
 
@@ -20,7 +17,7 @@ const Socials = () => {
     <div className="mx-4">
       {socialIcons &&
         socialIcons.map(socialIcon => (
-          <a href={socialIcon.link} target="_blank">
+          <a key={socialIcon.link} href={socialIcon.link} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               icon={socialIcon.icon}
               size="2x"

@@ -18,7 +18,7 @@ const Projects = () => {
             <div className="m-4 flex flex-wrap gap-2">
               {projectCards &&
                 projectCards.map(projectCard => (
-                  <div className="flex-grow boxshadow p-4 m-2 rounded-xl border-solid border border-yellow-300 text-white w-full md:w-1/3 lg:w-1/4">
+                  <div key={projectCard.name} className="flex-grow boxshadow p-4 m-2 rounded-xl border-solid border border-yellow-300 text-white w-full md:w-1/3 lg:w-1/4">
                     <img
                       src={projectCard.src}
                       alt={projectCard.alt}
@@ -28,7 +28,7 @@ const Projects = () => {
                     <p className="text-sm">{projectCard.desc}</p>
                     <p className="italic text-xs">{projectCard.role}</p>
                     <div className="text-sm py-2">
-                      <a href={projectCard.link} target="_blank">
+                      <a href={projectCard.link} target="_blank" rel="noopener noreferrer">
                         Go to project{" "}
                         <FontAwesomeIcon
                           icon={faSquareArrowUpRight}
@@ -37,9 +37,9 @@ const Projects = () => {
                         />
                       </a>
                     </div>
-                    {projectCard.github ? (
+                    {projectCard.github && (
                       <div className="text-sm py-2">
-                        <a href={projectCard.github} target="_blank">
+                        <a href={projectCard.github} target="_blank" rel="noopener noreferrer">
                           Github{" "}
                           <FontAwesomeIcon
                             icon={faSquareArrowUpRight}
@@ -48,8 +48,6 @@ const Projects = () => {
                           />
                         </a>
                       </div>
-                    ) : (
-                      <div></div>
                     )}
                   </div>
                 ))}
@@ -58,7 +56,7 @@ const Projects = () => {
             <div className="m-4 flex flex-wrap gap-2">
               {projectCards &&
                 projectCards.slice(0, 6).map(projectCard => (
-                  <div className="flex-grow boxshadow p-4 m-2 rounded-xl border-solid border border-yellow-300 text-white w-full md:w-1/3 lg:w-1/4">
+                  <div key={projectCard.name} className="flex-grow boxshadow p-4 m-2 rounded-xl border-solid border border-yellow-300 text-white w-full md:w-1/3 lg:w-1/4">
                     <img
                       src={projectCard.src}
                       alt={projectCard.alt}
@@ -68,7 +66,7 @@ const Projects = () => {
                     <p className="text-sm">{projectCard.desc}</p>
                     <p className="italic text-xs">{projectCard.role}</p>
                     <div className="text-sm py-2">
-                      <a href={projectCard.link} target="_blank">
+                      <a href={projectCard.link} target="_blank" rel="noopener noreferrer">
                         Go to project{" "}
                         <FontAwesomeIcon
                           icon={faSquareArrowUpRight}
@@ -77,9 +75,9 @@ const Projects = () => {
                         />
                       </a>
                     </div>
-                    {projectCard.github ? (
+                    {projectCard.github && (
                       <div className="text-sm py-2">
-                        <a href={projectCard.github} target="_blank">
+                        <a href={projectCard.github} target="_blank" rel="noopener noreferrer">
                           Github{" "}
                           <FontAwesomeIcon
                             icon={faSquareArrowUpRight}
@@ -88,8 +86,6 @@ const Projects = () => {
                           />
                         </a>
                       </div>
-                    ) : (
-                      <div></div>
                     )}
                   </div>
                 ))}

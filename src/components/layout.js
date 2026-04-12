@@ -22,7 +22,6 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  console.log(data)
   return (
     <div style={{ margin: "auto", maxWidth: "1600px" }}>
       <Header menulinks={data.site.siteMetadata?.menuLinks} />

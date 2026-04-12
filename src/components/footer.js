@@ -3,6 +3,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Socials from "./socials"
 
 const Footer = ({ menulinks }) => {
+   const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-black py-4">
       <div className="pt-8 max-w-4xl text-center m-auto">
@@ -12,6 +13,7 @@ const Footer = ({ menulinks }) => {
             {menulinks &&
               menulinks.map(menulink => (
                 <AnchorLink
+                  key={menulink.link}
                   to={menulink.link}
                   className="whitespace-nowrap hover:text-yellow-300 text-white p-2"
                 >
@@ -30,7 +32,7 @@ const Footer = ({ menulinks }) => {
           </div>
         </div>
         <p className="p-4 text-white text-xs ">
-          Designed &amp; Built by Lily So 2022
+          Designed &amp; Built by Lily So {currentYear}
         </p>
       </div>
     </footer>

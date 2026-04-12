@@ -23,8 +23,8 @@ const Hero = () => {
       <div className="w-full lg:w-1/2 p-4 flex justify-center">
         <SlideLeft>
           <div>
-            <img
-              src="lily.jpg"
+            <StaticImage
+              src="../images/Lily Headshot.jpeg"
               alt="lily so"
               className="w-full max-w-sm rounded-full"
             />
