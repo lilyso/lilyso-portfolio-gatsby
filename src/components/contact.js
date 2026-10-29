@@ -1,33 +1,7 @@
-import React, { useState } from "react"
+import React from "react"
 import LazyShow from "./lazyshow"
-import validator from "validator"
 
 const Contact = () => {
-  const [emailError, setEmailError] = useState("")
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  })
-  const validateEmail = e => {
-    let email = e.target.value
-
-    if (validator.isEmail(email)) {
-      setEmailError("Perfecto")
-    } else {
-      setEmailError("Please enter a valid email")
-    }
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault()
-    setFormState({
-      name: "",
-      email: "",
-      message: "",
-    })
-  }
-
   return (
     <LazyShow>
       <div id="contact" className="lg:m-12 px-4 pt-8 m-8 text-white">

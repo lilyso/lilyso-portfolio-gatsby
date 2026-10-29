@@ -10,7 +10,6 @@ import Contact from "../components/contact"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
     <Hero />
     <TechnicalSkills />
     <AboutMe />
@@ -18,5 +17,7 @@ const IndexPage = () => (
     <Contact />
   </Layout>
 )
+
+export const Head = () => <Seo title="Home" />
 
 export default IndexPage

@@ -12,13 +12,13 @@ const Nav = ({ menulinks }) => {
   }
 
   React.useEffect(() => {
-    const sw = window.innerWidth
     setScreenWidth(window.innerWidth)
 
     const changeWidth = () => {
       setScreenWidth(window.innerWidth)
     }
     window.addEventListener("resize", changeWidth)
+    return () => window.removeEventListener("resize", changeWidth)
   }, [])
 
   return (
@@ -34,6 +34,7 @@ const Nav = ({ menulinks }) => {
       <div className="block lg:hidden">
         <button
           onClick={toggleNav}
+          aria-label="Menu"
           className="flex mx-8 px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white"
         >
           <svg

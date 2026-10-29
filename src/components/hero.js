@@ -1,8 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import { Slide, SlideSlow, SlideLeft } from "./slide"
-import Drag from "./drag"
-import { motion } from "framer-motion"
 
 const Hero = () => {
   return (

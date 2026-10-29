@@ -20,10 +20,8 @@ module.exports = {
     ],
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-fontawesome-css`,
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
